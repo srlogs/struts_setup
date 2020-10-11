@@ -1,3 +1,4 @@
+<%@ taglib uri="/struts-tags" prefix="s" %>  
 <html>
    <head>
       <title>Hello World</title>
