@@ -2,16 +2,21 @@
 <struts>
    <constant name = "struts.devMode" value = "true" />
    <package name = "helloworld" extends = "struts-default">
-
       <action name = "index">
          <result >/index.jsp</result>
       </action>
-
       <action name = "hello" 
          class = "HelloWorldAction" 
          method = "execute">
          <result name = "success">/HelloWorld.jsp</result>
       </action>
-
    </package>
+   <!-- <package name="default" namespace="/jsonData" extends="json-default">
+      <action name="getJSONResult"
+           class="JSONDataAction"
+           method = "execute">
+       	   <result name = "success" type="json" />
+      </action>
+    </package> -->
+
 </struts>
